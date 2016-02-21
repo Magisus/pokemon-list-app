@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/mediumOrange"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/pokemon_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:id="@+id/pokemon_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/id_number_text"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/height_weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pokemon_name"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/id_number_text"/>
+
+</RelativeLayout>

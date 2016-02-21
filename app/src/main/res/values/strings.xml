@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PokemonListApp</string>
+    <string name="height_weight_format_string">Height: %1$s  Weight: %2$s</string>
+    <string name="list_activity_title">Pokemon Glossary</string>
+</resources>
