@@ -1,18 +1,21 @@
-package edu.lclark.mdreyer.pokemonlistapp;
+package edu.lclark.mdreyer.pokemonlistapp.pokemon;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.io.Serializable;
+
 /**
  * Created by ntille on 2/3/16.
  */
-public class Pokemon implements Parcelable {
+public class Pokemon implements Serializable {
 
 
     // id,identifier,species_id,height,weight
 
     private String mName, mId, mSpeciesId, mHeight, mWeight;
 
+    private PokemonStats stats;
 
     public Pokemon(String csvStr) {
         String[] split = csvStr.trim().split(",");
@@ -53,37 +56,11 @@ public class Pokemon implements Parcelable {
         return mWeight;
     }
 
-    @Override
-    public int describeContents() {
-        return 0;
+    public PokemonStats getStats() {
+        return stats;
     }
 
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(mName);
-        dest.writeString(mId);
-        dest.writeString(mSpeciesId);
-        dest.writeString(mHeight);
-        dest.writeString(mWeight);
-    }
-
-    public static final Parcelable.Creator<Pokemon> CREATOR = new Creator<Pokemon>() {
-        @Override
-        public Pokemon createFromParcel(Parcel source) {
-            return new Pokemon(source);
-        }
-
-        @Override
-        public Pokemon[] newArray(int size) {
-            return new Pokemon[size];
-        }
-    };
-
-    public Pokemon(Parcel source) {
-        mName = source.readString();
-        mId = source.readString();
-        mSpeciesId = source.readString();
-        mHeight = source.readString();
-        mWeight = source.readString();
+    public void setStats(PokemonStats stats) {
+        this.stats = stats;
     }
 }

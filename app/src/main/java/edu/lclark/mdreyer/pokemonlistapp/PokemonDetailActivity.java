@@ -11,6 +11,7 @@ import com.squareup.picasso.Picasso;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import edu.lclark.mdreyer.pokemonlistapp.pokemon.Pokemon;
 
 public class PokemonDetailActivity extends AppCompatActivity {
 
@@ -36,7 +37,7 @@ public class PokemonDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pokemon_detail);
         ButterKnife.bind(this);
 
-        pokemon = getIntent().getParcelableExtra(POKEMON_EXTRA);
+        pokemon = (Pokemon) getIntent().getSerializableExtra(POKEMON_EXTRA);
 
         setTitle(pokemon.getName());
         idText.setText(pokemon.getId());

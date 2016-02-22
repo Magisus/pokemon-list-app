@@ -1,4 +1,4 @@
-package edu.lclark.mdreyer.pokemonlistapp;
+package edu.lclark.mdreyer.pokemonlistapp.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -14,6 +14,8 @@ import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import edu.lclark.mdreyer.pokemonlistapp.R;
+import edu.lclark.mdreyer.pokemonlistapp.pokemon.Pokemon;
 
 /**
  * Created by Magisus on 2/20/2016.

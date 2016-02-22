@@ -1,4 +1,4 @@
-package edu.lclark.mdreyer.pokemonlistapp;
+package edu.lclark.mdreyer.pokemonlistapp.pokemon;
 
 import java.util.ArrayList;
 import java.util.List;

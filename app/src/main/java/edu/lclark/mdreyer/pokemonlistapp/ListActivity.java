@@ -9,6 +9,9 @@ import android.support.v7.widget.RecyclerView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import edu.lclark.mdreyer.pokemonlistapp.adapters.PokemonRecyclerAdapter;
+import edu.lclark.mdreyer.pokemonlistapp.pokemon.Pokedex;
+import edu.lclark.mdreyer.pokemonlistapp.pokemon.Pokemon;
 
 public class ListActivity extends AppCompatActivity implements
         PokemonRecyclerAdapter.PokemonRowClickListener {
