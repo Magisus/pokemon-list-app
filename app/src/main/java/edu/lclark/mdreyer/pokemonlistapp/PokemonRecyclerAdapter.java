@@ -2,7 +2,6 @@ package edu.lclark.mdreyer.pokemonlistapp;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -71,7 +70,8 @@ public class PokemonRecyclerAdapter extends RecyclerView.Adapter<PokemonRecycler
     }
 
     static class PokemonViewHolder extends RecyclerView.ViewHolder {
-        @Bind(R.id.pokemon_image) ImageView pokemonImage;
+        @Bind(R.id.pokemon_list_image)
+        ImageView pokemonImage;
         @Bind(R.id.pokemon_name) TextView pokemonName;
         @Bind(R.id.height_weight_text) TextView heightText;
         @Bind(R.id.id_number_text) TextView idNumber;
