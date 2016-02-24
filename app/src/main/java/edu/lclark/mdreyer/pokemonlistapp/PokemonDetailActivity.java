@@ -124,6 +124,7 @@ public class PokemonDetailActivity extends AppCompatActivity implements NetworkA
         intent.putExtra(POKEMON_EXTRA, pokemon);
         setResult(RESULT_OK, intent);
         finish();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
     @Override

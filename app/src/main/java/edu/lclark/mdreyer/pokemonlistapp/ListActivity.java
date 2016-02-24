@@ -44,6 +44,7 @@ public class ListActivity extends AppCompatActivity implements
         Intent intent = new Intent(ListActivity.this, PokemonDetailActivity.class);
         intent.putExtra(PokemonDetailActivity.POKEMON_EXTRA, pokemon);
         startActivityForResult(intent, POKEMON_CODE);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
     @Override
