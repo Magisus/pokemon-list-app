@@ -45,12 +45,38 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_progress_bar"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/experience_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            style="@style/DetailsText"/>
+
+        <TextView
+            android:id="@+id/hp_text"
+            style="@style/DetailsText"/>
+
+        <TextView
+            android:id="@+id/speed_text"
+            style="@style/DetailsText"/>
+
+        <TextView
+            android:id="@+id/attack_text"
+            style="@style/DetailsText"/>
+
+        <TextView
+            android:id="@+id/special_attack_text"
+            style="@style/DetailsText"/>
+
+        <TextView
+            android:id="@+id/defense_text"
+            style="@style/DetailsText"/>
+
+        <TextView
+            android:id="@+id/special_defense_text"
+            style="@style/DetailsText"/>
     </LinearLayout>
 
 </RelativeLayout>

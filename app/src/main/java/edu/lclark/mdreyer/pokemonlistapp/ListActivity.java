@@ -45,4 +45,15 @@ public class ListActivity extends AppCompatActivity implements
         intent.putExtra(PokemonDetailActivity.POKEMON_EXTRA, pokemon);
         startActivityForResult(intent, POKEMON_CODE);
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == POKEMON_CODE && resultCode == RESULT_OK) {
+            Pokemon pokeExtra = (Pokemon) data.getSerializableExtra(PokemonDetailActivity
+                    .POKEMON_EXTRA);
+            pokedex.getPokemons().set(Integer.parseInt(pokeExtra.getId()) - 1, pokeExtra);
+            pokemonList.getAdapter().notifyDataSetChanged();
+            super.onActivityResult(requestCode, resultCode, data);
+        }
+    }
 }

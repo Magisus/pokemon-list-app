@@ -3,4 +3,12 @@
     <string name="height_weight_format_string">Height: %1$s Weight: %2$s</string>
     <string name="height_weight_detail_format">Height: %1$s \u0020\u0020\u0020 Weight: %2$s</string>
     <string name="list_activity_title">Pokemon Glossary</string>
+    <string name="base_xp">Base experience: %s</string>
+    <string name="no_internet_error">No internet connection, unable to fetch stats.</string>
+    <string name="hp_detail">Hit points: %s</string>
+    <string name="speed_detail">Speed: %s</string>
+    <string name="attack_detail">Attack: %s</string>
+    <string name="special_attack_detail">"Special Attack: %s"</string>
+    <string name="defense_detail">Defense: %s</string>
+    <string name="special_defense_detail">Special defense: %s</string>
 </resources>
